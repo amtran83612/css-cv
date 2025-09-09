@@ -55,7 +55,7 @@ header img {
 
 /************* Sections ********************/
 hr {
-  height: 20px;
+  height: 5%;
   background-color: black;
 }
 
@@ -65,6 +65,7 @@ section h3 {
 }
 
 section dl {
+  background-color: antiquewhite;
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family:'Courier New', Courier, monospace;
@@ -97,8 +98,12 @@ section a:hover {
   display: grid;
   place-items: center;
   outline: black;
-  box-shadow: 2px 2px 2px 2px black;
   border: 1px black;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 3px 3px black;
 }
 
 .card img {
