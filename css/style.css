@@ -1,5 +1,5 @@
 body {
-  margin: 5px 5px 5px 5px;
+  margin: 2px 2px 2px 2px;
   }
 
 /****************   Nav Section **********************/
@@ -67,14 +67,15 @@ hr {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  margin: 10px 10px 10px 10px ;
+  margin: 20px 20px 20px 20px;
 }
 
 .row {
   display: grid;
   place-items: center;
-  box-shadow: 2px 2px 2px 2px;
+  box-shadow: 2px 2px 2px 2px #bab7a8;
 }
+
 
 section h3 {
   font-family: "Montserrat";
@@ -85,7 +86,7 @@ section dl {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family:'Courier New', Courier, monospace;
-  align-items: center;
+  place-content: center;
 }
 
 section ul {
@@ -141,17 +142,55 @@ section a:hover {
 }
 
 /**************   Contact Page   *****************/
-.one-col {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  align-content: center;
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.one-col {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  margin: 20px 20px 20px 20px;
+  font-family: "Montserrat";
+  background-color: #ebeae6;
+  width: 600px;
+  box-shadow: 2px 2px 2px 2px #bab7a8;
+  border-radius: 100px;
+  
+}
+
+.form-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+label {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px 5px 5px 5px;
+}
+
+
 input {
-  height: 20px;
+  height: 30px;
+  margin: 20px 20px 20px 20px;
+  background-color: #e6e8eb;
+  max-width: 300px;
 }
 
 textarea {
   height: 50px;
+  margin: 20px 20px 20px 20px;
+  background-color: #e6e8eb;
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px 5px 5px 5px;
+  width: 70px;
+
 }
