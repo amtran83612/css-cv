@@ -123,8 +123,8 @@ section a:hover {
 }
 
 .card img {
-  height: auto;
-  max-width: 100%;
+  height: 150;
+  max-width: 200;
 }
 
 /**************   Responsiveness   *****************/
