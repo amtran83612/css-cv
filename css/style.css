@@ -1,0 +1,136 @@
+body {
+  margin: 5px 5px 5px 5px;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: #f7f3eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Courier, monospace;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: #f7f3eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  height: 50px;
+}
+
+/*********** Splash Page ************************/
+header {
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+header h1 {
+  font-family: 'Montserrat';
+  color: #1e2024;
+}
+
+header img {
+  border:#1e2024;
+  border-radius: 15px;
+  border-width: 20px;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+/************* Sections ********************/
+hr {
+  height: 20px;
+  background-color: black;
+}
+
+section h3 {
+  font-family: "Montserrat";
+  color: #1e2024;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family:'Courier New', Courier, monospace;
+  align-items: center;
+}
+
+section ul {
+  display: grid;
+  font-family:'Courier New', Courier, monospace;
+}
+
+section a {
+  color: #5b7db5;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px
+}
+
+.card {
+  background-color: #d4d1cb;
+  display: grid;
+  place-items: center;
+  outline: black;
+  box-shadow: 2px 2px 2px 2px black;
+  border: 1px black;
+}
+
+.card img {
+  height: auto;
+  max-width: 100%;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-tracks: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: center;
+}
+
+input {
+  height: 20px;
+}
+
+textarea {
+  height: 50px;
+}
