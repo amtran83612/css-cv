@@ -23,7 +23,7 @@ footer {
 
 /*********** Splash Page ************************/
 header {
- background-color: white;
+ background-color: rgb(224, 221, 215);
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -41,6 +41,7 @@ header img {
 }
 
 .address {
+  background-color: rgb(224, 221, 215);
   display: flex;
   justify-content: center;
   font-family: "Montserrat";
@@ -48,6 +49,7 @@ header img {
 }
 
 .tagline {
+  background-color: rgb(224, 221, 215);
   display: flex;
   justify-content: center;
   font-family: "Montserrat";
@@ -55,8 +57,23 @@ header img {
 
 /************* Sections ********************/
 hr {
-  height: 5%;
-  background-color: black;
+  height: 3px;
+  background-color: #ebb134;
+  margin: 10px 10px 10px 10px ;
+}
+
+.sections {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 10px 10px 10px 10px ;
+}
+
+.row {
+  display: grid;
+  place-items: center;
+  box-shadow: 2px 2px 2px 2px;
 }
 
 section h3 {
@@ -65,7 +82,6 @@ section h3 {
 }
 
 section dl {
-  background-color: antiquewhite;
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family:'Courier New', Courier, monospace;
